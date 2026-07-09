@@ -1,0 +1,5 @@
+/target/
+tests/stranded2/
+tests/out/
+*.s2mod
+.DS_Store

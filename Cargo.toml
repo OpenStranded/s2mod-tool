@@ -1,0 +1,40 @@
+[package]
+name = "openstranded-convert"
+version = "0.2.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+description = "Convert original Stranded II mods to .s2mod format — library + CLI"
+
+[features]
+default = ["cli"]
+cli = ["dep:clap", "dep:tempfile"]
+
+[dependencies]
+inf2ron = "0.2"
+s2mod-packer = "0.1"
+s2s2lua = "0.1"
+bmpf2fnt = "0.2"
+clap = { version = "4", features = ["derive"], optional = true }
+anyhow = "1"
+walkdir = "2"
+ron = "0.12"
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+tempfile = { version = "3", optional = true }
+b3d2glb = "0.4"
+image = "0.25"
+pathdiff = "0.2"
+
+[dev-dependencies]
+ron = "0.12"
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+
+[lib]
+name = "openstranded_convert"
+path = "src/lib.rs"
+
+[[bin]]
+name = "openstranded-convert"
+path = "src/main.rs"
+required-features = ["cli"]

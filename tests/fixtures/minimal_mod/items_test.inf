@@ -1,0 +1,24 @@
+### Rock
+id=1
+name=Rock
+group=material
+icon=gfx\rock.bmp
+model=gfx\rock.b3d
+weight=200
+
+### Stick
+id=2
+name=Stick
+group=material
+icon=gfx\stick.bmp
+model=gfx\stick.b3d
+weight=100
+
+### Coconut
+id=3
+name=Coconut
+group=food
+icon=gfx\coconut.bmp
+model=gfx\coconut.b3d
+weight=300
+healthchange=15

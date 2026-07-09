@@ -1,0 +1,29 @@
+### Butterfly Garden
+id=100
+group=building
+objectid=500
+script=start
+	on:use {
+		msgbox "Garden","sys/scripts/butterflygarden.s2s";
+	}
+script=end
+
+### Missing File Reference
+id=101
+group=building
+objectid=501
+script=start
+	on:use {
+		msgbox "Missing","sys/scripts/nonexistent.s2s";
+	}
+script=end
+
+### Direct .txt reference
+id=102
+group=building
+objectid=502
+script=start
+	on:use {
+		button 0,"Test",0,"sys/scripts/directref.txt";
+	}
+script=end

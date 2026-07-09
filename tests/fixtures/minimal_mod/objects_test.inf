@@ -1,0 +1,18 @@
+### Palm tree
+id=10
+name=Palm tree
+group=tree
+icon=gfx\palmtree.bmp
+model=gfx\palmtree.b3d
+health=500
+behaviour=tree
+
+### Bush
+id=11
+name=Bush
+group=bush
+icon=gfx\bush.bmp
+model=gfx\bush.b3d
+health=100
+behaviour=bush
+find=1,50

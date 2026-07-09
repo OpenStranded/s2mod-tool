@@ -1,0 +1,10 @@
+on:start {
+    msg "Hello from test fixture!";
+}
+
+on:use {
+    $count = 5;
+    if (($count > 0)) {
+        msg "Count is positive";
+    }
+}

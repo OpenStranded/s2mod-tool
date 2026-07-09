@@ -1,0 +1,17 @@
+### Sharp stick
+combi=start
+id=sharpmake
+req=2
+gen=4
+genname=sharpen
+combi=end
+
+### Make fire
+combi=start
+id=makefire
+req=107
+req=24
+gen=107
+gen=24
+genname=make fire
+combi=end

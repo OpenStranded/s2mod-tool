@@ -1,0 +1,19 @@
+### Rabbit
+id=20
+name=Rabbit
+group=animal
+icon=gfx\rabbit.bmp
+model=gfx\rabbit.b3d
+speed=1.5
+health=30
+damage=1
+behaviour=animal
+
+### Player
+id=1
+name=Player
+group=human
+icon=gfx\player.bmp
+model=gfx\player.b3d
+speed=1.6
+health=100

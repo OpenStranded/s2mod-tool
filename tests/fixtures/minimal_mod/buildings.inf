@@ -1,0 +1,12 @@
+### Tent
+id=1
+group=building
+objectid=184
+req=97
+
+### Campfire
+id=2
+group=building
+objectid=185
+req=98
+req=99
