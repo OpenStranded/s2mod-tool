@@ -1,4 +1,4 @@
-# openstranded-convert
+# openstranded-s2mod-tool
 
 Convert original Stranded II mods to the `.s2mod` Content Pack format.
 
@@ -6,16 +6,16 @@ Convert original Stranded II mods to the `.s2mod` Content Pack format.
 
 ```bash
 # Install
-cargo install openstranded-convert
+cargo install openstranded-s2mod-tool
 
 # Convert a mod directory to .s2mod archive
-openstranded-convert --input "/path/to/Stranded II" --output ./stranded2.s2mod
+openstranded-s2mod-tool --input "/path/to/Stranded II" --output ./stranded2.s2mod
 
 # Convert to directory instead of zip
-openstranded-convert --input "/path/to/Stranded II" --output ./out --dir
+openstranded-s2mod-tool --input "/path/to/Stranded II" --output ./out --dir
 
 # Skip model/texture conversion (text-only)
-openstranded-convert --input "/path/to/Stranded II" --output ./text.s2mod --skip-models --skip-textures
+openstranded-s2mod-tool --input "/path/to/Stranded II" --output ./text.s2mod --skip-models --skip-textures
 ```
 
 ## Pipeline
@@ -37,13 +37,13 @@ Use as a Rust library:
 
 ```toml
 [dependencies]
-openstranded-convert = { version = "0.2", default-features = false }
+openstranded-s2mod-tool = { version = "0.2", default-features = false }
 ```
 
 ```rust
-use openstranded_convert::convert::convert_bmp_to_png;
-use openstranded_convert::scanner::{build_reference_map, S2sRefType};
-use openstranded_convert::util::parse_inf_file;
+use openstranded_s2mod_tool::convert::convert_bmp_to_png;
+use openstranded_s2mod_tool::scanner::{build_reference_map, S2sRefType};
+use openstranded_s2mod_tool::util::parse_inf_file;
 ```
 
 ## License

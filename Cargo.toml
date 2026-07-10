@@ -1,13 +1,15 @@
 [package]
-name = "openstranded-convert"
+name = "openstranded-s2mod-tool"
 version = "0.2.0"
 edition = "2024"
 license = "GPL-3.0-or-later"
-description = "Convert original Stranded II mods to .s2mod format — library + CLI"
-
-[features]
-default = ["cli"]
-cli = ["dep:clap", "dep:tempfile"]
+description = "Convert original Stranded II mods to the .s2mod Content Pack format"
+repository = "https://github.com/AvengerAnubis/openstranded-s2mod-tool"
+homepage = "https://github.com/AvengerAnubis/openstranded-s2mod-tool"
+documentation = "https://docs.rs/openstranded-s2mod-tool"
+readme = "README.md"
+keywords = ["stranded", "s2mod", "convert", "openstranded", "game-data"]
+categories = ["game-development", "development-tools"]
 
 [dependencies]
 inf2ron = "0.2"
@@ -31,10 +33,14 @@ serde = { version = "1", features = ["derive"] }
 toml = "0.8"
 
 [lib]
-name = "openstranded_convert"
+name = "openstranded_s2mod_tool"
 path = "src/lib.rs"
 
 [[bin]]
-name = "openstranded-convert"
+name = "openstranded-s2mod-tool"
 path = "src/main.rs"
 required-features = ["cli"]
+
+[features]
+default = ["cli"]
+cli = ["clap", "tempfile"]

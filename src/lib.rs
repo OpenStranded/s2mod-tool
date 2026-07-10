@@ -1,5 +1,5 @@
-// openstranded-convert — convert Stranded II mods to .s2mod format
-// Copyright (C) 2025  openstranded-convert contributors
+// openstranded-s2mod-tool — convert Stranded II mods to .s2mod format
+// Copyright (C) 2025  openstranded-s2mod-tool contributors
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -28,11 +28,11 @@
 //!
 //! # CLI
 //!
-//! Enable the default `cli` feature to build the `openstranded-convert` binary:
+//! Enable the default `cli` feature to build the `openstranded-s2mod-tool` binary:
 //!
 //! ```bash
-//! cargo install openstranded-convert
-//! openstranded-convert --input /path/to/Stranded\ II --output ./content.s2mod
+//! cargo install openstranded-s2mod-tool
+//! openstranded-s2mod-tool --input /path/to/Stranded\ II --output ./content.s2mod
 //! ```
 
 pub mod convert;

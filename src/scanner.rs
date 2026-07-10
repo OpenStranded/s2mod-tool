@@ -1,5 +1,5 @@
-// openstranded-convert — convert Stranded II mods to .s2mod format
-// Copyright (C) 2025  openstranded-convert contributors
+// openstranded-s2mod-tool — convert Stranded II mods to .s2mod format
+// Copyright (C) 2025  openstranded-s2mod-tool contributors
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by

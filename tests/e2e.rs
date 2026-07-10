@@ -1,5 +1,5 @@
-// openstranded-convert — convert Stranded II mods to .s2mod format
-// Copyright (C) 2025  openstranded-convert contributors
+// openstranded-s2mod-tool — convert Stranded II mods to .s2mod format
+// Copyright (C) 2025  openstranded-s2mod-tool contributors
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-//! End-to-end tests for the openstranded-convert CLI.
+//! End-to-end tests for the openstranded-s2mod-tool CLI.
 //!
 //! ## Non-ignored tests (run in CI, use bundled text fixtures)
 //!
@@ -83,7 +83,7 @@ fn binary_path() -> PathBuf {
     Path::new(env!("CARGO_MANIFEST_DIR"))
         .join("target")
         .join("debug")
-        .join("openstranded-convert")
+        .join("openstranded-s2mod-tool")
 }
 
 // ═══════════════════════════════════════════════════════════════
