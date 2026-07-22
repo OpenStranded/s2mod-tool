@@ -1,6 +1,6 @@
 [package]
 name = "openstranded-s2mod-tool"
-version = "0.2.3"
+version = "0.2.4"
 edition = "2024"
 license = "GPL-3.0-or-later"
 description = "Convert original Stranded II mods to the .s2mod Content Pack format"
@@ -15,7 +15,7 @@ categories = ["game-development", "development-tools"]
 inf2ron = "0.2"
 s2mod-packer = "0.1"
 s2s2lua = "0.1"
-bmpf2fnt = "0.2"
+bmpf2fnt = "0.3"
 clap = { version = "4", features = ["derive"], optional = true }
 anyhow = "1"
 walkdir = "2"
